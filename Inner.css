@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #191919;
+}
+
+#mainContainer {
+  gap: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#ilustratorIMG img {
+  width: 31rem;
+}
+
+#calculatorIMC {
+  gap: 2rem;
+  padding: 2rem;
+  display: flex;
+  color: #E6E8E6;
+  border-radius: 30px;
+  flex-direction: column;
+  background-color: #262626;
+}
+
+#calculatorForm {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#calculatorTitle {
+  font-size: 2.25rem;
+  position: relative;
+}
+
+#calculatorTitle::after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 8rem;
+  height: 3px;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #8C00BD;
+}
+
+.boxInput label {
+  color: #E6E8E6;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.fieldInput {
+  display: flex;
+  padding: 0.3rem;
+  margin-top: 3px;
+  border-radius: 15px;
+  align-items: center;
+  background-color: #3f3f46;
+  justify-content: space-between;
+}
+
+.fieldInput span,
+.fieldInput i {
+  color: #E6E8E6;
+  font-size: 1.3rem;
+  padding: 0.6rem 1rem;
+}
+
+.fieldInput input {
+  width: 100%;
+  border: none;
+  color: #f8fafc;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+
+.fieldInput input::-webkit-outer-spin-button,
+.fieldInput input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.fieldInput input:focus {
+  outline: none;
+}
+
+#calculateIMC {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #E6E8E6;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  border-radius: 15px;
+  background-color: #8C00BD;
+}
+
+#result {
+  gap: 2rem;
+  display: flex;
+  padding: 0.75rem 0;
+  align-items: center;
+  border-top: 1px solid #E6E8E6;
+}
+
+#bmi {
+  display: flex;
+  font-size: 2.25rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+#bmi span:last-child {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+}
+
+.normal {
+  color: #16a34a;
+}
+
+.attention {
+  color: #dc2626;
+}
+
+#description {
+  width: 15.5rem;
+}
+
+#moreInfo {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ffffff34;
+}
+
+#moreInfo a {
+  gap: 0.6rem;
+  display: flex;
+  color: #8C00BD;
+  align-items: center;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.5s;
+  justify-content: center;
+}
+
+#moreInfo a:hover {
+  color: #cbd5e1;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #ilustratorIMG {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #ilustratorIMG {
+    display: none;
+  }
+
+  #mainContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  #calculatorIMC {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    justify-content: center;
+  }
+}

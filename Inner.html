@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="Inner.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>IMC Calculator</title>
+</head>
+<body>
+<main id="mainContainer">
+  <section id="ilustratorIMG">
+    <img src="./Images/undraw_indoor_bike_pwa4.svg">
+  </section>
+
+  <section id="calculatorIMC">
+    <form id="calculatorForm">
+      <h1 id="calculatorTitle">IMC Calculator</h1>
+
+      <div class="boxInput">
+        <label for="weight">Weight in Kg</label>
+        <div class="fieldInput">
+          <i class="fa-solid fa-weight-hanging"></i>
+          <input type="number" id="weight" name="weight" required>
+          <span>Kg</span>
+        </div>
+      </div>
+
+      <div class="boxInput">
+        <label for="height">Height in Meters</label>
+        <div class="fieldInput">
+          <i class="fa-solid fa-ruler"></i>
+          <input type="number" step="0.01" id="height" name="height" required>
+          <span>Mts</span>
+        </div>
+      </div>
+
+      <button id="calculateIMC">Calculate</button>
+    </form>
+
+    <div id="informations" class="hidden">
+      <div id="result">
+        <div id="bmi">
+          <span id="value"></span>
+          <span>Your IMC</span>
+        </div>
+        <div id="description">
+          <span></span>
+        </div>
+      </div>
+
+      <div id="moreInfo">
+        <a href="https://patient.info/doctor/bmi-calculator" target="_blank">
+          More info about the IMC
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="Inner.js"></script>
+</body>
+</html>
